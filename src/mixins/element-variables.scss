@@ -1,0 +1,37 @@
+/* stylelint-disable scss/dollar-variable-default */
+
+// primary color
+$--color-primary: #1890FF;
+// success color
+$--color-success: #52C41A;
+// warning color
+$--color-warning: #FAAD14;
+// danger color
+$--color-danger: #F5222D;
+// info color
+$--color-info: #1890FF;
+
+// primary text color
+$--color-text-primary: rgba(0, 0, 0, .85);
+// regular text color
+$--color-text-regular: rgba(0, 0, 0, .65);
+// secondary text color
+$--color-text-secondary: rgba(0, 0, 0, .45);
+// placeholder text color
+$--color-text-placeholder: rgba(0, 0, 0, .25);
+
+// border color base
+$--border-color-base: #D9D9D9;
+// border color light
+$--border-color-light: #E1E1E1;
+// border color lighter
+$--border-color-lighter: #E9E9E9;
+// border color extra light
+$--border-color-extra-light: #F0F0F0;
+
+// base background color
+$--background-color-base: #F4F4F4;
+
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+@import "~element-ui/packages/theme-chalk/src/index";
