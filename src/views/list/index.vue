@@ -1,60 +1,58 @@
 <template>
-  <keep-alive>
-    <el-main style="display: flex; flex-direction: column;">
-      <el-row
-        :gutter="16"
-        style="flex: 1 0 auto;"
+  <el-main style="display: flex; flex-direction: column;">
+    <el-row
+      :gutter="16"
+      style="flex: 1 0 auto;"
+    >
+      <el-col
+        v-for="good of goods"
+        :key="good.id"
+        :span="6"
       >
-        <el-col
-          v-for="good of goods"
-          :key="good.id"
-          :span="6"
-        >
-          <el-card>
-            <div slot="header">
-              <strong>{{ good.name }}</strong>
-            </div>
-            <p>{{ good.price }}</p>
-            <p>Count: {{ cartMap.get(good.id) || 0 }}</p>
-            <el-button-group>
-              <el-button
-                @click="handleCickAdd({
-                  id: good.id,
-                  name: good.name,
-                  price: good.price
-                })"
-                size="small"
-              >
-                Add
-              </el-button>
-              <el-button
-                v-if="cartMap.get(good.id)"
-                @click="handleCickMinus({ id: good.id })"
-                size="small"
-              >
-                Minus
-              </el-button>
-            </el-button-group>
-          </el-card>
-        </el-col>
-      </el-row>
-      <el-row
-        type="flex"
-        justify="center"
-        align="center"
-      >
-        <el-pagination
-          :current-page="current"
-          :page-size="size"
-          :page-sizes="[8, 12, 16, 20, 24]"
-          :total="totalCount"
-          @current-change="handleChangeCurrent"
-          @size-change="handleChangeSize"
-          layout="total, sizes, prev, pager, next, jumper"
-        />
-      </el-row>
-    </el-main>
-  </keep-alive>
+        <el-card>
+          <div slot="header">
+            <strong>{{ good.name }}</strong>
+          </div>
+          <p>{{ good.price }}</p>
+          <p>Count: {{ cartMap.get(good.id) || 0 }}</p>
+          <el-button-group>
+            <el-button
+              @click="handleCickAdd({
+                id: good.id,
+                name: good.name,
+                price: good.price
+              })"
+              size="small"
+            >
+              Add
+            </el-button>
+            <el-button
+              v-if="cartMap.get(good.id)"
+              @click="handleCickMinus({ id: good.id })"
+              size="small"
+            >
+              Minus
+            </el-button>
+          </el-button-group>
+        </el-card>
+      </el-col>
+    </el-row>
+    <el-row
+      type="flex"
+      justify="center"
+      align="center"
+    >
+      <el-pagination
+        :current-page="current"
+        :page-size="size"
+        :page-sizes="[8, 12, 16, 20, 24]"
+        :total="totalCount"
+        @current-change="handleChangeCurrent"
+        @size-change="handleChangeSize"
+        layout="total, sizes, prev, pager, next, jumper"
+      />
+    </el-row>
+  </el-main>
 </template>
 
 <script>

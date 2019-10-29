@@ -1,6 +1,6 @@
 # vue2-shopping-cart-demo
 
-A todo list demo for new Vuer, built with vue, vue-router, and element-ui.
+A todo list demo for new Vuer, initialled by vue-cli 4 and built with vue 2, vue-router 3, vuex 3 and element-ui 2.
 
 ## Getting Started
 
@@ -16,9 +16,9 @@ These instructions will get you a copy of the project up and running on your loc
   - Then install node lts in terminal / command line
 
     ```sh
-    # for now, lts version is 10.16.3
-    # last updated: 2019.09.17
-    nvm install 10.16.3
+    # for now, lts version is 12.13.0
+    # last updated: 2019.10.29
+    nvm install 12.13.0
     ```
 
   - Globally update npm to lts and install yarn
@@ -58,6 +58,7 @@ No tests now. Pull requests are welcome.
 - [vue-cli](https://cli.vuejs.org/) - Standard tooling for Vue.js development, using to initial this project
 - [vue](https://vuejs.org) - A progressive JavaScript framework
 - [vue-router](https://router.vuejs.org/) - The official router for Vue.js
+- [vuex](https://vuex.vuejs.org/) - A state management pattern + library for Vue.js applications
 - [element-ui](https://element.eleme.io/) - A Vue.js 2.0 UI Toolkit for Web
 - [nprogress](http://ricostacruz.com/nprogress/) - A nanoscopic progress bar
 - [eslint](https://eslint.org) - An open source project provided a pluggable linting utility for JavaScript, using [standard](https://standardjs.com/) in the project
@@ -70,21 +71,13 @@ No tests now. Pull requests are welcome.
 
 ## Browsers Support
 
-Please read [.browerslistrc](./.browserslistrc) for details. You can get actual supported browsers [browserl.ist](https://browserl.ist).
-
-## Contributing
-
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on code of conduct, and the process for submitting pull requests.
-
-## Versioning
-
-Use [SemVer](http://semver.org/) for versioning. For the versions available, see the [releases on this repository](https://github.com/ModyQyW/vue-vuetify-admin/releases).
+Please read [package.json](./package.json) for details. You can get actual supported browsers on [browserl.ist](https://browserl.ist).
 
 ## Authors
 
 - **Rui Wu** - *Initial work* - [ModyQyW](https://github.com/ModyQyW)
 
-See also the list of [contributors](https://github.com/ModyQyW/vue-vuetify-admin/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/ModyQyW/vue2-shopping-cart-demo/contributors) who participated in this project.
 
 ## License
 

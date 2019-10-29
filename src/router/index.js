@@ -1,18 +1,11 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 import routes from './routes'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-const createRouter = () => new Router({
-  mode: 'hash',
-  base: process.env.BASE_URL,
-  scrollBehavior: () => ({
-    y: 0
-  }),
+const router = new VueRouter({
   routes
 })
-
-const router = createRouter()
 
 export default router

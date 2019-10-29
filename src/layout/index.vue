@@ -26,7 +26,9 @@
       name="el-fade-in-linear"
       mode="out-in"
     >
-      <router-view :key="this.routeName" />
+      <keep-alive>
+        <router-view :key="this.routeName" />
+      </keep-alive>
     </transition>
     <el-footer>
       By ModyQyW. MIT License.
@@ -73,7 +75,7 @@ export default {
 }
 
 .el-main {
-  flex: 1 0 calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
 }
 
 .el-footer {

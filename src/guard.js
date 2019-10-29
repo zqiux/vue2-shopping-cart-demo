@@ -1,10 +1,10 @@
-import NProgress from 'nprogress'
+import nprogress from 'nprogress'
 import router from '@/router'
 import store from '@/store'
 import '@u/nprogress.scss'
 
 router.beforeEach((to, from, next) => {
-  NProgress.start()
+  nprogress.start()
   if (store.getters.token) {
     if (to.name === 'login') {
       next({ name: 'list' })
@@ -21,5 +21,5 @@ router.beforeEach((to, from, next) => {
 })
 
 router.afterEach(() => {
-  NProgress.done()
+  nprogress.done()
 })

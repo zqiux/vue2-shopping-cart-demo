@@ -6,7 +6,7 @@
       </div>
       <p>{{ good.price }}</p>
       <p>Count: {{ cartMap.get(good.id) }}</p>
-      <p>Total Price: {{ good.price * cartMap.get(good.id) }}</p>
+      <p>Total Price: {{ good.price.slice(1) * cartMap.get(good.id) }}</p>
       <el-button-group>
         <el-button
           @click="handleCickAdd({
@@ -27,7 +27,7 @@
         </el-button>
       </el-button-group>
     </el-card>
-    <p>No goods picked.</p>
+    <p v-if="cart.length === 0">No goods picked.</p>
   </el-main>
 </template>
 
