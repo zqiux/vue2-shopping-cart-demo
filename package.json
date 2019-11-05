@@ -12,8 +12,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@modyqyw/css-styles": "^0.1.2",
-    "core-js": "^3.3.2",
+    "@modyqyw/css-styles": "^0.3.0",
+    "core-js": "^3.3.6",
     "element-ui": "^2.12.0",
     "nprogress": "^0.2.0",
     "vue": "^2.6.10",
@@ -33,11 +33,11 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "lint-staged": "^9.4.2",
-    "sass": "^1.23.1",
+    "sass": "^1.23.3",
     "sass-loader": "^8.0.0",
     "stylelint": "^11.1.1",
     "stylelint-codeframe-formatter": "^1.0.4",
-    "stylelint-config-twbs-bootstrap": "^0.8.0",
+    "stylelint-config-twbs-bootstrap": "^0.9.0",
     "stylelint-webpack-plugin": "^1.0.3",
     "vue-template-compiler": "^2.6.10"
   },
